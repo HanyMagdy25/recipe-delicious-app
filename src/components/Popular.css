@@ -1,0 +1,116 @@
+.wrapper {
+  margin: 4rem 0rem;
+}
+.card {
+  min-height: 25rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+.card img {
+  border-radius: 2rem;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card p {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gradient {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+/* ========= Category ============== */
+
+.list {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.cat-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 2rem;
+  text-decoration: none;
+  background: linear-gradient(35deg, #494949, #313131);
+  width: 5.5rem;
+  height: 5.5rem;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+.cat-icon h4{
+  font-size: 0.8rem;
+  color: #fff;
+  margin-top: 5px;
+}
+.cat-icon svg{
+  font-size: 1.5rem;
+  color: #fff;
+}
+.cat-icon.active{
+    background: linear-gradient(to right, #f27121, #e94057);
+}
+/* ========== cuisine ========= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+}
+.cuisineCard img {
+  width: 100%;
+  border-radius: 2rem;
+}
+.cuisineCard a {
+  text-decoration: none;
+}
+.cuisineCard h4 {
+  text-align: center;
+  padding: 1rem;
+}
+/* ========== Search ============*/
+.search{
+    margin: 0 20rem;
+}
+.search div{
+    position: relative;
+    width: 100%;
+}
+.search input{
+    border: none;
+    background: linear-gradient(35deg,#494949,#313131);
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    width: 100%;
+}
+.search svg{
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translate(100%,-50%);
+    color: #fff;
+}
